@@ -21,14 +21,15 @@
 
         <!--Get user data and send to database-->
         <?php
-        echo "Let us know your experience with birds"<br>
+        echo "Let us know your experience with birds"
         ?>
         
+        <br>
         <form action="database.php" method="post">
             What is your name?<br> <input type="varchar(30)" name="name"><br>
             What species of bird have you seen?<br> <input type="text" name="type"><br>
             How many have you seen?<br> <input type="int" name="number"><br>
-            <input type="submit">
+            <input type="submit" name="submit" value="Submit">
         </form>
 
         <!-- Suggest another page to the user-->

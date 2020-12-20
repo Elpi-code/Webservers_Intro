@@ -37,6 +37,11 @@
         </br> <br>
         
         <p>Which one is your favorite?</p>
+        <!--Get data from user-->
+        <input id="favorite">
+        <button type="button" onclick="justLetters(favorite)">Submit</button>
+        
+        <!--Make sure data contains only letters-->
         <script>
             function justLetters(favorite){
                 var letters = /^A[A-Za-z]+$;
@@ -51,17 +56,11 @@
                 }
             }
         </script>
-        
-        <form name="myForm" action="/amphibians.php" onsubmit="return justLetters()" method="post">
-            Name: <input id="animal" type="text" name="animal">
-            <input type="submit" value="Submit">
-        </form>
        
         <br><br>
         <p>Any comments?</p>
         <form action="/forms.php">
-            <textarea name="comments?" rows="5" cols="30"></textarea> <br><br>
-            <input type="text" name="comment" required>
+            <textarea name="comment" rows="5" cols="30"></textarea> <br>
             <input type="submit" value="Submit">
         </form>
 

@@ -9,7 +9,9 @@
         <h2>Amphibians and Reptiles</h2>
         <h3>Species found in Mont-Saint-Hilaire</h3>
 
-        <p>Here are some amphibians species found around the mountain:</p>
+        <?php
+        echo "Here are some amphibians species found around the mountain:";
+        ?>
         <ul>
             <li><span style="color:dodgerblue;"> Salamander</span> </li>
             <img src="/Images/salamander.jpg" alt="Salamander" />
@@ -20,7 +22,11 @@
 
         </ul>
         </br>
-        <p>Did you ever see one of these animals before?</p>
+        
+        <?php
+        echo "Did you ever see one of these animals before?"
+        ?>
+
         <form action="/amphibians.php">
             <select id="animal" name="animal">
                 <option value="yes">Yes</option>

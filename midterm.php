@@ -4,12 +4,14 @@
 
     <?php
         echo "Here are the ProgramName options saved from the database:";
-    
+
+        //Defining variables
         $servername = '10.0.0.169';
         $username = 'pi';
         $password = 'Raspberry#p1';
         $dbname = 'animals';
 
+        //Create and checking connection to mysql
         $conn = mysqli_connect($servername, $username, $password, $dbname);
         if (!$conn) {
         	die("Connection failed: " . mysqli_connect_error());

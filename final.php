@@ -4,7 +4,7 @@
         <h1>GOOGLE</h1>
     </head>
 
-    /* Creating a search button similar to th eone on Google's page */
+    /* Creating a search button similar to the one on Google's page */
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
 

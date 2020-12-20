@@ -4,7 +4,7 @@
         <title>Lab 3 first html file</title>
     </head>
     <body>
-
+    
         <h1>Animals in Quebec</h1>
         <h2>Birds</h2>
         <h3>Species found in Mont-Saint-Hilaire</h3>
@@ -19,6 +19,19 @@
             <img src="Images/warbler.jpg" alt="A warbler" />
         </ul>
 
+        <!--Get user data and send to database-->
+        <?php
+        echo "Let us know your experience with birds"
+        ?>
+        
+        <form action="database.php" action="post">
+            What is your name?<br> <input type="varchar(30)" name="name"><br>
+            What species of bird have you seen?<br> <input type="text" name="type"><br>
+            How many have you seen?<br> <input type="int" name="number"><br>
+        </form>
+
+        <!-- Suggest another page to the user-->
+        <p>Now if you want to learn about amphibians and reptiles, click <a href="amphibians.php"> here</a>.</p>
 
     </body>
 </html>

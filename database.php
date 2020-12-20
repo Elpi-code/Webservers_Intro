@@ -21,7 +21,7 @@
         }
 
         //Insert data form form
-        $sql = "INSERT INTO birds (Person, TypeSeen, NumberSeen) VALUES ('$Person', '$TypeSeen', '$NumberSeen);"
+        $sql = "INSERT INTO birds (Person, TypeSeen, NumberSeen) VALUES ('$Person', '$TypeSeen', '$NumberSeen)";
 
         //Make sure there are no errors
         if (mysqli_query($conn, $sql)) {

@@ -1,9 +1,8 @@
 //Check if only letters are entered
-function justLetters(){
+function justLetters(inputtxt){
     var letters = /^A[A-Za-z]+$/;
-    var x = document.forms["myForm"]["favorite"].value;
 
-    if(x.value.match(letters))
+    if(inputtxt.value.match(letters))
     {
         alert("That is indeed a good choice!");
         return true;

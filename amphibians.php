@@ -41,10 +41,11 @@
         </br> <br>
         
         <p>Which one is your favorite?</p>
-        <form name="myForm" action="javascript.js"
-        onsubmit="return justLetters()" method="post">
-        First name: <input type="text" name="favorite">
-
+        <form name="form1" action="javascript.js">
+        <input type="text" name="favorite"/>
+        <input type="submit" name="submit" value="Submit" onclick="justLetters(document.form1.favorite)"/>
+        </form>
+        
         <!--Get data from user--
         <input id="favorite">
         <button type="button" onclick="justLetters()">Submit</button>

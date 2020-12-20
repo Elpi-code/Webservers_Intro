@@ -5,7 +5,7 @@
     <?php
     
         //Variables
-        $servername = "pinoupi";
+        $servername = "localhost";
         $username = "pi";
         $password = "Raspberry#p1";
         $dbname = "animals";

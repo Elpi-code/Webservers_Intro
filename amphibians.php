@@ -2,7 +2,11 @@
 <html>
     <head>
         <title>Lab 3 second html file</title>
+
+        <!--Call the Javascript functions-->
+        <script src="javascript.js"></script>
     </head>
+
     <body>
 
         <h1>Animals in Quebec</h1>
@@ -37,16 +41,20 @@
         </br> <br>
         
         <p>Which one is your favorite?</p>
-        <!--Get data from user-->
+        <form name="myForm" action="javascript.js"
+        onsubmit="return justLetters()" method="post">
+        First name: <input type="text" name="favorite">
+
+        <!--Get data from user--
         <input id="favorite">
-        <button type="button" onclick="justLetters(favorite)">Submit</button>
+        <button type="button" onclick="justLetters()">Submit</button>
         <p id="demo"></p>
 
-        <!--Make sure data contains only letters-->
+        !--Make sure data contains only letters--
         <script>
             function justLetters(){
                 var text;
-                var letters = /^A[A-Za-z]+$;
+                var letters = /^A[A-Za-z]+$/;
                 x = document.getElementById("favorite").value;
 
                 if(x.value.match(letters))
@@ -61,7 +69,7 @@
                 document.getElementById("demo").innerHTML = text;
             }
         </script>
-       
+        -->
         <br><br>
         <p>Any comments?</p>
         <form action="/forms.php">

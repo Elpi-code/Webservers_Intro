@@ -1,6 +1,6 @@
 //Check if only letters are entered
 function justLetters(inputtxt){
-    var letters = /^A[A-Za-z]+$/;
+    var letters = /^[A-Za-z]+$/;
 
     if(inputtxt.value.match(letters))
     {

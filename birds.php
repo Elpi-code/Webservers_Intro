@@ -28,6 +28,7 @@
             What is your name?<br> <input type="varchar(30)" name="name"><br>
             What species of bird have you seen?<br> <input type="text" name="type"><br>
             How many have you seen?<br> <input type="int" name="number"><br>
+            <input type="submit">
         </form>
 
         <!-- Suggest another page to the user-->

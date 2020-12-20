@@ -21,7 +21,7 @@
 
         <!--Get user data and send to database-->
         <?php
-        echo "Let us know your experience with birds"
+        echo "Let us know your experience with birds"<br>
         ?>
         
         <form action="database.php" method="post">

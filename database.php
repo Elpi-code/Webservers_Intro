@@ -5,10 +5,10 @@
     <?php
     
         //Variables
-        $servername = '10.0.0.169';
-        $username = 'pi';
-        $password = 'Raspberry#p1';
-        $dbname = 'animals';
+        $servername = "10.0.0.169";
+        $username = "pi";
+        $password = "Raspberry#p1";
+        $dbname = "animals";
 
         $Person = $_POST["name"];
         $TypeSeen = $_POST["type"];
@@ -24,10 +24,10 @@
         $sql = "INSERT INTO birds (Person, TypeSeen, NumberSeen) VALUES ('$Person', '$TypeSeen', '$NumberSeen);"
 
         //Make sure there are no errors
-        if(mysqli_query($conn, $sql)) {
-            echo "Your information was successfuly processed!";
+        if (mysqli_query($conn, $sql)) {
+            echo "Your information was successfuly processed! <br>";
         }
-        else{
+        else {
             echo "Error: " .$sql . "<br>" . mysqli_error($conn);
         }
 

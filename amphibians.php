@@ -44,9 +44,12 @@
 
         <!--Make sure data contains only letters-->
         <script>
-            function justLetters(favorite){
+            function justLetters(){
+                var text;
                 var letters = /^A[A-Za-z]+$;
-                if(favorite.value.match(letters))
+                x = document.getElementById("favorite").value;
+
+                if(x.value.match(letters))
                 {
                     text = "That is indeed a good choice!";
                     return true;

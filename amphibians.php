@@ -40,20 +40,22 @@
         <!--Get data from user-->
         <input id="favorite">
         <button type="button" onclick="justLetters(favorite)">Submit</button>
-        
+        <p id="demo"></p>
+
         <!--Make sure data contains only letters-->
         <script>
             function justLetters(favorite){
                 var letters = /^A[A-Za-z]+$;
                 if(favorite.value.match(letters))
                 {
-                    alert("That is indeed a good choice!");
+                    text = "That is indeed a good choice!";
                     return true;
                 }
                 else{
-                    alert("An animal name can only contain letters");
+                    text = "An animal name can only contain letters";
                     return false;
                 }
+                document.getElementById("demo").innerHTML = text;
             }
         </script>
        

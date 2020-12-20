@@ -24,7 +24,7 @@
         echo "Let us know your experience with birds"
         ?>
         
-        <form action="database.php" action="post">
+        <form action="database.php" method="post">
             What is your name?<br> <input type="varchar(30)" name="name"><br>
             What species of bird have you seen?<br> <input type="text" name="type"><br>
             How many have you seen?<br> <input type="int" name="number"><br>

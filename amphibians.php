@@ -38,25 +38,31 @@
         
         <p>Which one is your favorite?</p>
         <script>
-            function validateForm(){
-                var x = document.getElementById("fname").value;
-                if(x == ""){
-                    alert("You must choose one animal");
+            function justLetters(favorite){
+                var letters = /^A[A-Za-z]+$;
+                if(favorite.value.match(letters))
+                {
+                    alert("That is indeed a good choice!");
+                    return true;
+                }
+                else{
+                    alert("An animal name can only contain letters");
                     return false;
                 }
             }
         </script>
         
-        <form name="myForm" action="/amphibians.php" onsubmit="return validateForm()" method="post">
+        <form name="myForm" action="/amphibians.php" onsubmit="return justLetters()" method="post">
             Name: <input id="animal" type="text" name="animal">
             <input type="submit" value="Submit">
         </form>
        
         <br><br>
         <p>Any comments?</p>
-        <form action="/amphibians.php">
+        <form action="/forms.php">
             <textarea name="comments?" rows="5" cols="30"></textarea> <br><br>
-            <input type="submit">
+            <input type="text" name="comment" required>
+            <input type="submit" value="Submit">
         </form>
 
         <br>

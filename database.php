@@ -34,7 +34,7 @@
         //Make sure there are no errors
         if (mysqli_query($conn, $sql)) {
             echo "Your information was successfuly processed! <br>";
-            echo "$Person, $TypeSeen, $NumberSeen <br>";
+            echo "Values entered: $Person, $TypeSeen, $NumberSeen <br>";
         }
         else {
             echo "Error: " .$sql . "<br>" . mysqli_error($conn);
@@ -42,6 +42,9 @@
 
         //Close connection to database
         mysqli_close($conn);
+
+        //Redirect to index.php
+        header('Location http://pinoupi.local:8080/index.php');
     ?>
 </body>
 </html>

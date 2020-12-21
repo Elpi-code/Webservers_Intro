@@ -10,9 +10,14 @@
         $password = "Raspberry#p1";
         $dbname = "animals";
 
+        //From birds.php page
         $Person = $_POST["name"];
         $TypeSeen = $_POST["type"];
         $NumberSeen = $_POST["number"];
+
+        //From amphibians.php page
+        $species = $_POST["species"];
+        $ip = $_SERVER['REMOTE_ADDR'];
 
         //Connection to database
         $conn = mysqli_connect($servername, $username, $password, $dbname);
@@ -21,8 +26,10 @@
             die("Connection failed: " . mysqli_connect_error());
         }
 
-        //Insert data form form
+        //Insert data from form in birds.php
         $sql = "INSERT INTO birds (Person, TypeSeen, NumberSeen) VALUES ('$Person', '$TypeSeen', '$NumberSeen)";
+        //Insert data from form in amphibians.php
+        $sql = "INSERT INTO amphibians(IP_of_User, Animal_seen) VALUES ('$ip', '$species')";
 
         //Make sure there are no errors
         if (mysqli_query($conn, $sql)) {

@@ -31,12 +31,15 @@
         echo "Did you ever see one of these animals before?"
         ?>
 
-        <form action="/amphibians.php">
-            <select id="animal" name="animal">
-                <option value="yes">Yes</option>
-                <option value="no">No</option>
+        <!--Animal seen by user sent to amphibians table in database-->
+        <form action="database.php" method="post">
+            <select id="species" name="species">
+                <option value="Salamander">Salamander</option>
+                <option value="Wood Frog">Wood Frog</option>
+                <option value="Garter Snake">Garter Snake</option>
+                <option value="None">Never saw any of these</option>
             </select>
-            <input type="submit">
+            <input type="submit" value="Submit">
         </form>
         </br> <br>
         
@@ -55,7 +58,7 @@
         <script>
             function justLetters(){
                 var text;
-                var letters = /^A[A-Za-z]+$/;
+                var letters = /^[A-Za-z]+$/;
                 x = document.getElementById("favorite").value;
 
                 if(x.value.match(letters))

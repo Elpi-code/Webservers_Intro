@@ -44,7 +44,7 @@
         mysqli_close($conn);
 
         //Redirect to index.php
-        header('Location http://pinoupi.local:8080/index.php');
+        //header('Location http://pinoupi.local:8080/index.php');
     ?>
 </body>
 </html>

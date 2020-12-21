@@ -25,7 +25,7 @@
         ?>
         
         <form action="database.php" method="post">
-            What is your name?<br> <input type="varchar(30)" name="name" id="name"><br>
+            What is your name?<br> <input type="text" name="name" id="name"><br>
             What species of bird have you seen?<br> <input type="text" name="type" id="type"><br>
             How many have you seen?<br> <input type="int" name="number" id="number"><br>
             <input type="submit" name="submit" value="Submit">

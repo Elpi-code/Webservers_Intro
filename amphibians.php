@@ -44,6 +44,7 @@
         <form name="form1" action="javascript.js">
         <input type="text" name="favorite"/>
         <input type="submit" name="submit" value="Submit" onclick="justLetters(document.form1.favorite)"/>
+        <p id="demo"></p>
         </form>
         
         <!--Get data from user--

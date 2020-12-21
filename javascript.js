@@ -1,14 +1,13 @@
 //Check if only letters are entered
 function justLetters(inputtxt){
     var letters = /^[A-Za-z]+$/;
-
+    var text;
     if(inputtxt.value.match(letters))
     {
-        alert("That is indeed a good choice!");
-        return true;
+        text = "That is indeed a good choice!";
     }
     else{
         alert("An animal name can only contain letters");
-        return false;
     }
+    document.getElementById("demo").innerHTML = text;
 }

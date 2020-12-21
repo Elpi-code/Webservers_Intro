@@ -27,14 +27,14 @@
         }
 
         //Insert data from form in birds.php
-        $sql = "INSERT INTO birds (Person, TypeSeen, NumberSeen) VALUES ('$Person', '$TypeSeen', '$NumberSeen)";
+        $sql = "INSERT INTO birds2 (Person, TypeSeen, NumberSeen) VALUES ('$Person', '$TypeSeen', '$NumberSeen)";
         //Insert data from form in amphibians.php
         $sql = "INSERT INTO amphibians(IP_of_User, Animal_seen) VALUES ('$ip', '$species')";
 
         //Make sure there are no errors
         if (mysqli_query($conn, $sql)) {
             echo "Your information was successfuly processed! <br>";
-            echo "$Person <br>";
+            echo "$Person, $TypeSeen, $NumberSeen <br>";
         }
         else {
             echo "Error: " .$sql . "<br>" . mysqli_error($conn);

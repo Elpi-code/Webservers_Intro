@@ -34,6 +34,7 @@
         //Make sure there are no errors
         if (mysqli_query($conn, $sql)) {
             echo "Your information was successfuly processed! <br>";
+            echo "$Person <br>";
         }
         else {
             echo "Error: " .$sql . "<br>" . mysqli_error($conn);

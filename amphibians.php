@@ -2,9 +2,6 @@
 <html>
     <head>
         <title>Lab 3 second html file</title>
-
-        <!--Call the Javascript functions-->
-        <script src="javascript.js"></script>
     </head>
 
     <body>

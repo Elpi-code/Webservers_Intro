@@ -19,9 +19,9 @@
             <img src="Images/warbler.jpg" alt="A warbler" />
         </ul>
 
-        <!--Get user data and send to database-->
+        <!--Get user data and sanitize it with JavaScript function-->
         <p>Which one of these birds is your favorite?</p>
-        <form name="form1" action="index.php">
+        <form name="form1" action="database.php">
         <input type="text" name="favorite"/>
         <input type="submit" name="submit" value="Submit" onclick="justLetters(document.form1.favorite)"/>
         </form>

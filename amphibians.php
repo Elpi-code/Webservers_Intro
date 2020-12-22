@@ -16,6 +16,8 @@
         <?php
         echo "Here are some amphibians species found around the mountain:";
         ?>
+
+        <!-- Show pictures of amphibians-->
         <ul>
             <li><span style="color:dodgerblue;"> Salamander</span> </li>
             <img src="/Images/salamander.jpg" alt="Salamander" />
@@ -23,7 +25,6 @@
             <img src="/Images/woodfrog.jpg" alt="Wood Frog" />
             <li><span style="color:dodgerblue;"> Garter Snake</span> </li>
             <img src="/Images/gartersnake.png" alt="Garter Snake" />
-
         </ul>
         </br>
         

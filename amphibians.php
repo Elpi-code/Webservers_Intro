@@ -44,7 +44,7 @@
         </br> <br>
         
         <p>Which one is your favorite?</p>
-        <form name="form1" action="birds.php">
+        <form name="form1" action="index.php">
         <input type="text" name="favorite"/>
         <input type="submit" name="submit" value="Submit" onclick="justLetters(document.form1.favorite)"/>
         </form>

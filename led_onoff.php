@@ -20,7 +20,7 @@
 
             //Read Switch value and echo it to user
             $opt = `gpio read 2`;
-            if(($opt) = `gpio read 2`) == 0){
+            if($opt == 0){
                 echo "</br>The switch is as LOW as it can be!</br>";
             }
             else{
@@ -32,14 +32,14 @@
                 $opt = `gpio read 0`;
 
                 //Toggle it ON if pin is low
-                if(($opt = `gpio read 0`) == 0){
+                if($opt == 0){
                     $opt=  `gpio write gpio.0 1`;
                     echo "<div>$opt</div>";
                     echo "</br>Your LED should be ON!</br>";
                 }
 
                 //Toggle it OFF if pin is high
-                else if (($opt = `gpio read 0`) == 1){
+                else if ($opt == 1){
                     $opt = `gpio write gpio.0 0`;
                     echo "<div>$opt</div>";
                     echo "</br>Your LED should be OFF now!</br>";

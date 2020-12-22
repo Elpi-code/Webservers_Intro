@@ -26,7 +26,7 @@
         <p>What species of bird is your favorite?</p>
         <form name="form1" action="birds.php">
         <input type="text" name="favorite"/>
-        <input type="submit" name="submit" value="Submit" onclick="justLetters(document.form1.favorite)"/>
+        <input type="submit" name="submit" value="Submit" onclick="return justLetters(document.form1.favorite)"/>
         </form>
 
         <!-- Suggest another page to the user-->

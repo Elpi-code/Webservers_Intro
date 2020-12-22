@@ -22,7 +22,7 @@
             <li><span style="color:dodgerblue;"> Salamander</span> </li>
             <img src="Images/salamander.jpg" alt="Salamander" />
             <li><span style="color:dodgerblue;"> Wood Frog</span> </li>
-            <img src="C:\Users\louis\OneDrive\Documents\GitHub\Webservers_Intro\Images\woodfrog.jpg" alt="Wood Frog" />
+            <img src="Images/woodfrog.jpg" alt="Wood Frog" />
             <li><span style="color:dodgerblue;"> Garter Snake</span> </li>
             <img src="Images/gartersnake.png" alt="Garter Snake" />
         </ul>

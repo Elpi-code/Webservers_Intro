@@ -13,13 +13,13 @@ function justLetters(inputtxt){
 //Change image when clicking on it
 function changeImg(){
     var image = document.getElementById('mshimage');
-    if (image.src.match("Images/mont-saint-hilaire.jpg")){
-        image.src = "Images/mshtopview.jpg";
+    if (image.src.match("Images/mont-st-hilaire.jpg")){
+        image.src = "Images/mshlandscape.JPG";
     }
     else if(image.src.match("Images/mshtopview")){
-        image.src = "Images/mshlandscape.jpg";
+        image.src = "Images/mont-st-hilaire.jpg";
     }
-    else if(image.src.match("Images/mshlandscape")){
-        image.src = "Images/mont-saint-hilaire";
+    else if(image.src.match("Images/mshlandscape.JPG")){
+        image.src = "Images/mshtopview.JPG";
     }
 }

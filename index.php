@@ -8,11 +8,11 @@
 </head>
     <body>
     
-    <img src="Images/mont-saint-hilaire.jpg" id="mshimage" width="500" height="333" 
+    <img src="Images/mont-st-hilaire.jpg" id="mshimage" width="500" height="333" 
         onclick="changeImg()" value="Change"/>
 
     <!--<img src="Images/mshlandscape" alt="Landscape" width="500" height="333"/>
-    <img src="Images/mont-saint-hilaire.jpg" alt="Mont-Saint-Hilaire" />
+    <img src="Images/mont-st-hilaire.jpg" alt="Mont-Saint-Hilaire" />
     <img src="Images/mshtopview" alt="Topview" width="500" height="333"/>
     --></br>
 

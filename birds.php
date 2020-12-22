@@ -20,8 +20,8 @@
         </ul>
 
         <!--Get user data and sanitize it with JavaScript function-->
-        <p>Which one of these birds is your favorite?</p>
-        <form name="form1" action="database.php">
+        <p>What species of bird is your favorite?</p>
+        <form name="form1">
         <input type="text" name="favorite"/>
         <input type="submit" name="submit" value="Submit" onclick="justLetters(document.form1.favorite)"/>
         </form>

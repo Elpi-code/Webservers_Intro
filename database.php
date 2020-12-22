@@ -35,6 +35,7 @@
         if (mysqli_query($conn, $sql)) {
             echo "Your information was successfuly processed! <br>";
             echo "Values entered: $Person $TypeSeen $NumberSeen $species<br>";
+            echo "If you want to return to the main page, click " <a href='index.php'> here.</a>;
         }
         else {
             echo "Error: " .$sql . "<br>" . mysqli_error($conn);

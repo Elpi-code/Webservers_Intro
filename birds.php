@@ -20,15 +20,10 @@
         </ul>
 
         <!--Get user data and send to database-->
-        <?php
-        echo "Let us know your experience with birds <br>"
-        ?>
-        
-        <form action="database.php" method="post">
-            What is your name?</br><input type="text" name="name"/></br>
-            What species of bird have you seen?</br><input type="text" name="type"/><br>
-            How many have you seen?</br><input type="int" name="number"/><br>
-            <input type="submit" name="submit" value="Submit"/>
+        <p>Which one of these birds is your favorite?</p>
+        <form name="form1" action="index.php">
+        <input type="text" name="favorite"/>
+        <input type="submit" name="submit" value="Submit" onclick="justLetters(document.form1.favorite)"/>
         </form>
 
         <!-- Suggest another page to the user-->

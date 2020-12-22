@@ -43,45 +43,8 @@
         </form>
         </br> <br>
         
-        <p>Which one is your favorite?</p>
-        <form name="form1" action="index.php">
-        <input type="text" name="favorite"/>
-        <input type="submit" name="submit" value="Submit" onclick="justLetters(document.form1.favorite)"/>
-        </form>
-        
-        <!--Get data from user--
-        <input id="favorite">
-        <button type="button" onclick="justLetters()">Submit</button>
-        <p id="demo"></p>
-
-        !--Make sure data contains only letters--
-        <script>
-            function justLetters(){
-                var text;
-                var letters = /^[A-Za-z]+$/;
-                x = document.getElementById("favorite").value;
-
-                if(x.value.match(letters))
-                {
-                    text = "That is indeed a good choice!";
-                    return true;
-                }
-                else{
-                    text = "An animal name can only contain letters";
-                    return false;
-                }
-                document.getElementById("demo").innerHTML = text;
-            }
-        </script>
-        -->
+        <!-- Invite user to visit another page-->
         <br><br>
-        <p>Any comments?</p>
-        <form action="/forms.php">
-            <textarea name="comment" rows="5" cols="30"></textarea> <br>
-            <input type="submit" value="Submit">
-        </form>
-
-        <br>
         <p>Now if you want to learn about birds, click <a href="birds.php"> here</a>.</p>
         
     </body>

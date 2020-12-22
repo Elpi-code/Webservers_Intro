@@ -22,7 +22,7 @@
         <!--References to other pages in the website-->
         <p>If you are interested in learning about some birds that nest on the mountain, click <a href="birds.php"> here</a>.</br>
             If you prefer learning about some amphibians that reside around the mountain, click <a href="amphibians.php"> here</a>.</br>
-            </br> Or for something that has nothing at all to do with this website, click here <a href="led_onoff.php"> here</a>! :grin:</p>
+            </br> Or for something that has nothing at all to do with this website, click here <a href="led_onoff.php"> here</a>! &#128513;</p>
 
     </body>
 </html>

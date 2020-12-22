@@ -8,10 +8,10 @@
         <h1>Toggle LED</h1>
 
         <p>This page is used to turn an LED ON or OFF by cliking on the button below.</p></br>
-        <form method="post">
+        <form method="post" action="led_onoff.php">
             <input type="submit" name = "click" value="Click me"/></br>
         </form>
-        
+
         <?php
             //Execute the function when the form above has been submitted
             if(array_key_exists('click',$_POST)){

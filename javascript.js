@@ -4,9 +4,11 @@ function justLetters(inputtxt){
     if(inputtxt.value.match(letters))
     {
         alert("That is indeed a good choice!");
+        return true;
     }
     else{
         alert("An animal name can only contain letters");
+        return false;
     }
 }
 

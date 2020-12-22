@@ -12,11 +12,7 @@
         <img src="Images/mont-st-hilaire.jpg" id="mshimage" width="500" height="333" 
             value="change" onclick="changeImg(document.form2.change)" />
         </form>
-
-        <!--<img src="Images/mshlandscape" alt="Landscape" width="500" height="333"/>
-        <img src="Images/mont-st-hilaire.jpg" alt="Mont-Saint-Hilaire" />
-        <img src="Images/mshtopview" alt="Topview" width="500" height="333"/>
-        --></br>
+        </br>
 
         <h1>Animals in the Mont-Saint-Hilaire region</h1>
         <p>There are many different animals found around Mont-Saint-Hilaire. </br>
